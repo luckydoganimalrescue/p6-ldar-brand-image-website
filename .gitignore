@@ -1,0 +1,17 @@
+.DS_Store
+.env
+.next/
+.swc/
+*.bak
+*.log
+*.swo
+*.swp
+*.temp
+*.tmp
+*.tsbuildinfo
+coverage/
+dist/
+logs
+node_modules/
+out/
+pnpm-debug.log*
