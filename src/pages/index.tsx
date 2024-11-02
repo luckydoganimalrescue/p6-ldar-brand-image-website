@@ -22,7 +22,7 @@ const UploadForm = () => {
       setIsUploading(true);
       document.body.innerHTML = '<h1>Uploading...</h1>';
 
-      const presignResponse = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/presign`, {
+      const presignResponse = await fetch('https://t0noua7f72.execute-api.us-east-1.amazonaws.com/presign', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ const UploadForm = () => {
       });
 
       document.body.innerHTML = '<h1>Branding...</h1>';
-      const brandingResponse = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/brand`, {
+      const brandingResponse = await fetch('https://t0noua7f72.execute-api.us-east-1.amazonaws.com/brand', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
