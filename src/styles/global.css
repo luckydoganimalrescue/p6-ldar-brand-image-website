@@ -1,6 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-primary: #51c4d3;
+  --color-secondary: #004e89;
+  --image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+  --image-gradient-conic: conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops));
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
